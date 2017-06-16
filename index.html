@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动效果 兼容PC 移动端</title>
+	<link rel="shortcut icon" href="http://www.daiwei.org/index/images/logo/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+</head>
+<style>
+	body,html{
+		height: 100%;
+	}
+
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.aaa{
+		position: absolute;
+		right: 60px;
+		bottom: 60px;
+		width: 50px;
+		height: 50px;
+		z-index: 111;
+		background: #67CFA0;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px  0 #aaa;
+		color: #fff;
+		font-size: 12px;
+		text-align: center;
+		line-height: 50px;
+		user-select:none;
+	}
+</style>
+<body>
+	<div class="aaa">
+		拖我吖
+	</div>
+<script src="http://www.daiwei.org/global/js/jquery.js"></script>
+<script src="js/move.js"></script>
+<script>
+	$('.aaa').move({});
+</script>
+</body>
+</html>
